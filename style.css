@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex; /* Use flexbox to position header and main */
+}
+
+header {
+    background: chocolate; /* Title part color */
+    color: #fff; /* Title text color */
+    padding: 1rem;
+    width: 250px; /* Fixed width for the sidebar */
+    height: 100vh; /* Full height */
+    position: sticky; /* Sticky header */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+header h1 {
+    margin: 0; /* Remove margin from header title */
+}
+
+button {
+    background: #fff; /* Button color */
+    color: chocolate; /* Button text color */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 1rem; /* Space below button */
+}
+
+nav {
+    margin-top: 20px; /* Add space above nav */
+    width: 100%; /* Full width of the header */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: block; /* Stack links vertically */
+    margin: 10px 0; /* Space between links */
+}
+
+nav ul li a {
+    color: burlywood; /* Link color */
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    text-align: center; /* Center text in main */
+    flex: 1; /* Allow main to take up remaining space */
+    background-color: black; /* Background color */
+    color: burlywood; /* Text color */
+}
+
+section {
+    margin-bottom: 20px;
+    display: none; /* Initially hide all sections */
+    max-width: 800px; /* Optional: limit the width of sections */
+    text-align: center; /* Center text in each section */
+}
+
+form input,
+form textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+button:hover {
+    background: #A0522D; /* Darker chocolate on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header {
+        width: 100%; /* Full width for smaller screens */
+        height: auto; /* Auto height for smaller screens */
+    }
+}
